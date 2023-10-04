@@ -1,0 +1,100 @@
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Домашняя страница</title>
+	<link rel="stylesheet" href="./CSS/style.css">
+	<link rel="shortcut icon" href="img/favic.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./CSS/swiper.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="header-container">
+			<p class="header-homepage-title">Домашняя страница</p>
+			<div class="middle-lane"></div>
+			<nav class="header-menu-nav">
+				<ul class="header-menu-list">
+					<li class="header-menu publication">Публикации</li>
+					<li class="header-menu projects">Мои проекты</li>
+					<li class="header-menu links">Ссылки</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="swiper MySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="./img/img1.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/img1.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/img1.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/img1.png">
+				</div>
+				<div class="swiper-slide">
+					<img src="./img/img1.png">
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="block-container">
+			<div class="main-blocks">
+				<div class="content-container">
+					<div class="content-img"></div>
+					<div class="content-text">
+						<p class="content-title">Установка APT в Arch Linux</p>
+						<p class="content-description">
+							Инструкция по установке пакетного менеджера APT в небезызвестном
+							дистрибутиве Arch...
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="main-blocks">
+				<div class="content-container">
+					<div class="content-img"></div>
+					<div class="content-text">
+						<p class="content-title">Установка APT в Arch Linux</p>
+						<p class="content-description">
+							Инструкция по установке пакетного менеджера APT в небезызвестном
+							дистрибутиве Arch...
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer-container">
+			<div class="footer-mail">Для связи: dorogmih@yandex.ru</div>
+			<div class="footer-black-border"></div>
+		</div>
+	</footer>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			spaceBetween: 30,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			mousewhell: true,
+			keyboard: true,
+		});
+	</script>
+</body>
+
+</html>

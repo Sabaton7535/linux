@@ -1,0 +1,357 @@
+@charset "UTF-8";
+/*Шрифты*/
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,900&display=swap");
+/*--------------------*/
+/*Обнуление стилей по умолчанию*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background: url(../img/шум.png) rgb(220, 234, 248);
+  height: 2000px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/*Блоки стилей*/
+/*Header*/
+header {
+  background: url(../img/шум.png) rgb(87, 147, 227);
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  width: 100%;
+  height: 140px;
+}
+header > .header-container {
+  padding: 10px 0 0 0;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+header > .header-container > .header-homepage-title {
+  font-family: "Exo 2";
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 900;
+  padding: 0 0 0.5em 0.5em;
+}
+header > .header-container > .middle-lane {
+  border: 1px solid rgba(241, 245, 249, 0.7);
+  width: 100%;
+  height: 1%;
+  border-radius: 100px;
+  background: rgba(43, 101, 249, 0.7);
+  box-shadow: 0px 1px 2px 0px rgba(87, 147, 227, 0.51) inset, 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+}
+header > .header-container > .header-menu-nav {
+  font-family: "Exo 2";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  width: 22%;
+  height: 40%;
+  display: flex;
+}
+header > .header-container > .header-menu-nav > .header-menu-list {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  justify-content: space-between;
+}
+header > .header-container > .header-menu-nav > .header-menu-list .header-menu {
+  text-align: center;
+}
+
+/*Main*/
+main {
+  width: 100%;
+  margin-top: -500px;
+}
+main > .main-slider {
+  display: flex;
+  justify-content: center;
+}
+main > .main-slider > .slider-theme {
+  background: url("../img/computer.jpg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 32%;
+  height: 26.7em;
+  border: 10px solid white;
+  border-radius: 35px;
+  box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.25) inset, 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+main > .main-slider > .slider-theme > .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 200px;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+main > .main-slider > .slider-theme > .text-container > .title {
+  font-family: "Exo 2";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.45) 1.95px 1.95px 2.6px;
+}
+main > .main-slider > .slider-theme > .text-container > .description {
+  font-family: "Exo 2";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.45) 1.95px 1.95px 2.6px;
+}
+main .block-container {
+  display: flex;
+  width: 100%;
+  height: 58%;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+main .main-blocks {
+  background: white no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 35%;
+  height: 27em;
+  border-radius: 35px;
+  box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.25), 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+main .main-blocks > .content-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+main .main-blocks > .content-container > .content-img {
+  background: url(../img/computer.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  border-radius: 20px;
+  height: 90%;
+}
+main .main-blocks > .content-container > .content-text {
+  width: 50%;
+  height: 90%;
+}
+main .main-blocks > .content-container > .content-text > .content-title {
+  font-family: "Exo 2";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: rgb(42, 42, 57);
+  margin-bottom: 1em;
+}
+main .main-blocks > .content-container > .content-text > .content-description {
+  color: rgb(42, 42, 57);
+  font-family: "Exo 2";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+}
+
+/*Footer*/
+footer {
+  background: url(../img/шум.png) rgb(87, 147, 227);
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: flex-end;
+}
+footer > .footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+}
+footer > .footer-container > .footer-mail {
+  font-family: "Exo 2";
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  margin-top: -0.5rem;
+  width: 100%;
+  height: 80%;
+}
+footer > .footer-container > .footer-black-border {
+  width: 100%;
+  height: 100%;
+  background: rgb(70, 70, 70);
+  box-shadow: 0px -40px 40px 0px rgba(0, 0, 0, 0.6) inset;
+}
+
+/*--------------------*/
+@media (min-width: 1200px) and (max-width: 1600px) {
+  body {
+    height: 1580px;
+  }
+  header {
+    width: 110%;
+  }
+  header > .header-container > .header-menu-nav {
+    width: 32%;
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    height: 1580px;
+  }
+  header {
+    width: 110%;
+  }
+  header > .header-container > .header-menu-nav {
+    width: 32%;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    height: 100%;
+  }
+  header {
+    width: 220%;
+  }
+  header > .header-container > .header-menu-nav {
+    width: 50%;
+  }
+  main > .marq > .main-slider {
+    width: 220%;
+  }
+  main > .marq > .main-slider > .slider-theme {
+    height: 17em;
+    width: 100%;
+    background-size: cover;
+    margin-top: 255px;
+  }
+  main > .marq > .block-container {
+    width: 220%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  main > .marq > .main-blocks {
+    height: 20em;
+    width: 50em;
+  }
+  main > .marq > .arrow-to-left {
+    width: 100px;
+    height: 100px;
+    top: 340px;
+    left: 15px;
+  }
+  main > .marq > .arrow-to-right {
+    width: 100px;
+    height: 100px;
+    top: 340px;
+    left: 762px;
+  }
+  footer {
+    width: 220%;
+    margin-top: 100px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,105 @@
+main {
+	width: 100%;
+	margin-top: -500px;
+	> .main-slider {
+		display: flex;
+		justify-content: center;
+		> .slider-theme {
+			background: url("../img/computer.jpg") no-repeat;
+			background-position: center;
+			background-size: contain;
+			width: 32%;
+			height: 26.7em;
+			border: 10px solid white;
+			border-radius: 35px;
+			box-shadow:
+				-2px -2px 4px 0px rgba(0, 0, 0, 0.25) inset,
+				2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+			> .text-container {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				height: 200px;
+				width: 100%;
+				justify-content: space-evenly;
+				padding: 1em;
+				> .title {
+					font-family: "Exo 2";
+					font-size: 32px;
+					font-weight: 700;
+					line-height: 30px;
+					letter-spacing: 0em;
+					text-align: left;
+					color: white;
+					text-shadow: rgba(0, 0, 0, 0.45) 1.95px 1.95px 2.6px;
+				}
+				> .description {
+					font-family: "Exo 2";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 17px;
+					letter-spacing: 0em;
+					text-align: left;
+					color: white;
+					text-shadow: rgba(0, 0, 0, 0.45) 1.95px 1.95px 2.6px;
+				}
+			}
+		}
+	}
+	.block-container {
+		display: flex;
+		width: 100%;
+		height: 58%;
+		align-items: flex-end;
+		justify-content: space-evenly;
+	}
+	.main-blocks {
+		background: white no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 35%;
+		height: 27em;
+		border-radius: 35px;
+		box-shadow:
+			-2px -2px 4px 0px rgba(0, 0, 0, 0.25),
+			2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+		> .content-container {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			align-items: center;
+			justify-content: space-around;
+
+			> .content-img {
+				background: url(../img/computer.jpg) no-repeat;
+				background-position: center;
+				background-size: cover;
+				width: 40%;
+				border-radius: 20px;
+				height: 90%;
+			}
+			> .content-text {
+				width: 50%;
+				height: 90%;
+				> .content-title {
+					font-family: "Exo 2";
+					font-size: 32px;
+					font-weight: 700;
+					line-height: 30px;
+					text-align: left;
+					color: rgba(42, 42, 57, 1);
+					margin-bottom: 1em;
+				}
+				> .content-description {
+					color: rgba(42, 42, 57, 1);
+					font-family: "Exo 2";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 17px;
+					text-align: left;
+				}
+			}
+		}
+	}
+}

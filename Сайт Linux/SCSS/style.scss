@@ -1,0 +1,171 @@
+/*Шрифты*/
+@import "./fonts";
+/*--------------------*/
+
+/*Обнуление стилей по умолчанию*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/*--------------------*/
+body {
+	background: url(../img/шум.png) rgba(220, 234, 248, 1);
+	height: 2000px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	min-width: 0;
+}
+/*Блоки стилей*/
+
+/*Header*/
+@import "./blocks/header";
+/*Main*/
+@import "./blocks/main";
+/*Footer*/
+@import "./blocks/footer";
+/*--------------------*/
+@media (min-width: 1200px) and (max-width: 1600px) {
+	body {
+		height: 1580px;
+	}
+	header {
+		width: 110%;
+		> .header-container > .header-menu-nav {
+			width: 32%;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	body {
+		height: 1580px;
+	}
+	header {
+		width: 110%;
+		> .header-container > .header-menu-nav {
+			width: 32%;
+		}
+	}
+}
+@media (max-width: 400px) {
+	body {
+		height: 100%;
+	}
+	header {
+		width: 220%;
+		> .header-container > .header-menu-nav {
+			width: 50%;
+		}
+	}
+	main > .marq > .main-slider {
+		width: 220%;
+	}
+	main > .marq > .main-slider > .slider-theme {
+		height: 17em;
+		width: 100%;
+		background-size: cover;
+		margin-top: 255px;
+	}
+	main > .marq > .block-container {
+		width: 220%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.left {
+		display: none;
+	}
+	.right {
+		display: none;
+	}
+	main > .marq > .main-blocks {
+		height: 20em;
+		width: 50em;
+	}
+	main > .marq > .arrow-to-left {
+		width: 100px;
+		height: 100px;
+		top: 340px;
+		left: 15px;
+	}
+	main > .marq > .arrow-to-right {
+		width: 100px;
+		height: 100px;
+		top: 340px;
+		left: 762px;
+	}
+	footer {
+		width: 220%;
+		margin-top: 100px;
+	}
+}
